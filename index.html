@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oplog - Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #0f1117;
+      --surface: #1a1d27;
+      --border: #2a2d3a;
+      --text: #e4e4e7;
+      --text-muted: #9ca3af;
+      --accent: #f59e0b;
+      --accent-dim: rgba(245, 158, 11, 0.15);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .logo svg {
+      width: 32px;
+      height: 32px;
+      color: var(--accent);
+    }
+
+    .logo span {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    .header h1 {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .header .effective {
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      margin: 36px 0 14px;
+      color: var(--accent);
+    }
+
+    h3 {
+      font-size: 15px;
+      font-weight: 600;
+      margin: 20px 0 8px;
+    }
+
+    p, li {
+      font-size: 15px;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+
+    ul {
+      padding-left: 24px;
+      margin-bottom: 16px;
+    }
+
+    li { margin-bottom: 6px; }
+
+    strong { color: var(--text); font-weight: 600; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0 24px;
+      font-size: 14px;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 10px 14px;
+      border: 1px solid var(--border);
+    }
+
+    th {
+      background: var(--accent-dim);
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    td { color: var(--text-muted); }
+
+    .callout {
+      background: var(--surface);
+      border-left: 3px solid var(--accent);
+      padding: 16px 20px;
+      margin: 20px 0;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .callout p { margin: 0; }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    .footer {
+      margin-top: 56px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+          <polyline points="14 2 14 8 20 8"/>
+          <line x1="16" y1="13" x2="8" y2="13"/>
+          <line x1="16" y1="17" x2="8" y2="17"/>
+          <polyline points="10 9 9 9 8 9"/>
+        </svg>
+        <span>Oplog</span>
+      </div>
+      <h1>Privacy Policy</h1>
+      <p class="effective">Effective Date: March 8, 2026</p>
+    </div>
+
+    <h2>1. Introduction</h2>
+    <p>
+      Oplog ("we", "our", "the extension") is a Chrome browser extension that helps users
+      log and replay their AI workflow operations across supported platforms. This Privacy Policy
+      explains what data we collect, how we use it, and the choices you have.
+    </p>
+
+    <div class="callout">
+      <p>
+        <strong>Key principle:</strong> Oplog only records data when you explicitly start a
+        logging session. No data is ever collected in the background without your action.
+      </p>
+    </div>
+
+    <h2>2. Data We Collect</h2>
+    <p>When you activate a logging session, the extension captures the following on supported AI platforms only:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Data Type</th>
+          <th>What Is Captured</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>AI Prompts</strong></td>
+          <td>The text of prompts you submit to AI platforms</td>
+        </tr>
+        <tr>
+          <td><strong>Clipboard Activity</strong></td>
+          <td>Text you copy from or paste into AI chat pages</td>
+        </tr>
+        <tr>
+          <td><strong>File Uploads</strong></td>
+          <td>File name, size, and type of files you upload to AI platforms. The file itself is uploaded to Cloudinary (see Section 5).</td>
+        </tr>
+        <tr>
+          <td><strong>Downloads</strong></td>
+          <td>File name and URL of assets you download from AI platforms. The file itself is uploaded to Cloudinary (see Section 5).</td>
+        </tr>
+        <tr>
+          <td><strong>Session Metadata</strong></td>
+          <td>Timestamps, platform name (e.g. "claude", "chatgpt"), and a session identifier</td>
+        </tr>
+        <tr>
+          <td><strong>Authentication</strong></td>
+          <td>Your email address and an authentication token, stored locally in your browser</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Supported Platforms</h3>
+    <p>The extension only operates on these AI platforms:</p>
+    <ul>
+      <li>claude.ai</li>
+      <li>chatgpt.com</li>
+      <li>gemini.google.com</li>
+      <li>grok.com / grok.x.ai</li>
+      <li>imageprompt.org</li>
+    </ul>
+    <p>The extension does <strong>not</strong> collect data from any other websites you visit.</p>
+
+    <h2>3. How We Use Your Data</h2>
+    <ul>
+      <li><strong>Workflow Logging:</strong> Events are recorded to create a timeline of your AI interactions within a session.</li>
+      <li><strong>Pipeline Generation:</strong> Recorded sessions can be converted into reusable step-by-step pipelines via the Oplog web dashboard.</li>
+      <li><strong>Asset Previews:</strong> Uploaded and downloaded files are stored on Cloudinary so they can be previewed in the timeline and pipelines.</li>
+    </ul>
+    <p>We do <strong>not</strong> use your data for advertising, analytics profiling, or sale to third parties.</p>
+
+    <h2>4. Data Storage</h2>
+    <h3>Local Browser Storage</h3>
+    <p>
+      The extension stores your authentication token, current session state, and a temporary event
+      buffer in <code>chrome.storage.local</code>. This data remains on your device and is cleared
+      when you log out.
+    </p>
+
+    <h3>Backend Server</h3>
+    <p>
+      Recorded events are transmitted to the backend server you configure during setup. The
+      backend stores sessions and events in a MongoDB database. You retain full control
+      over your backend deployment and its data.
+    </p>
+
+    <h2>5. Third-Party Services</h2>
+    <h3>Cloudinary</h3>
+    <p>
+      Files you upload to or download from AI platforms during a logging session are sent to
+      <a href="https://cloudinary.com" target="_blank" rel="noopener">Cloudinary</a>, a cloud-based
+      media management service, for storage and preview purposes. Cloudinary receives:
+    </p>
+    <ul>
+      <li>The file content (images, documents, or other assets)</li>
+      <li>A generated public identifier for the file</li>
+    </ul>
+    <p>
+      Cloudinary's use of your data is governed by their
+      <a href="https://cloudinary.com/privacy" target="_blank" rel="noopener">Privacy Policy</a>.
+      No other third-party services receive your data.
+    </p>
+
+    <h2>6. Browser Permissions</h2>
+    <p>The extension requests the following Chrome permissions:</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Permission</th>
+          <th>Why It's Needed</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>storage</strong></td>
+          <td>Store authentication tokens and buffer events locally</td>
+        </tr>
+        <tr>
+          <td><strong>downloads</strong></td>
+          <td>Detect when you download assets from AI platforms</td>
+        </tr>
+        <tr>
+          <td><strong>activeTab</strong></td>
+          <td>Identify which AI platform tab is active</td>
+        </tr>
+        <tr>
+          <td><strong>scripting</strong></td>
+          <td>Extract generated images (e.g. from Gemini) for upload to Cloudinary</td>
+        </tr>
+        <tr>
+          <td><strong>Host access</strong></td>
+          <td>Content scripts run only on supported AI platforms and api.cloudinary.com</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>7. Your Choices & Controls</h2>
+    <ul>
+      <li><strong>Opt-in recording:</strong> Data is only collected when you press "Start Logging". You can stop at any time.</li>
+      <li><strong>Delete sessions:</strong> You can delete any recorded session and its events from the Oplog web dashboard.</li>
+      <li><strong>Log out:</strong> Logging out clears your authentication token and session data from the browser.</li>
+      <li><strong>Uninstall:</strong> Removing the extension stops all data collection and clears local storage.</li>
+    </ul>
+
+    <h2>8. Data Security</h2>
+    <p>
+      We take reasonable measures to protect your data:
+    </p>
+    <ul>
+      <li>All communication with the backend server and Cloudinary uses HTTPS encryption.</li>
+      <li>API authentication uses JWT (JSON Web Tokens) with expiration.</li>
+      <li>Sensitive credentials (e.g. <code>.env</code> files) are never included in source code or repositories.</li>
+    </ul>
+    <p>
+      However, no method of electronic transmission or storage is 100% secure. We cannot guarantee
+      absolute security of your data.
+    </p>
+
+    <h2>9. Data Retention</h2>
+    <p>
+      Recorded sessions and events are stored on the backend server until you choose to delete
+      them via the web dashboard. Files uploaded to Cloudinary are retained until manually removed.
+      Local browser data is cleared upon logout or extension removal.
+    </p>
+
+    <h2>10. Children's Privacy</h2>
+    <p>
+      Oplog is not intended for use by individuals under the age of 13. We do not knowingly
+      collect personal information from children under 13. If you believe a child has provided
+      us with personal data, please contact us so we can take appropriate action.
+    </p>
+
+    <h2>11. Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. Changes will be posted on this
+      page with an updated effective date. Continued use of the extension after changes
+      constitutes acceptance of the revised policy.
+    </p>
+
+    <h2>12. Contact</h2>
+    <p>
+      If you have questions or concerns about this Privacy Policy or your data, please contact us at:
+    </p>
+    <p>
+      <strong>Email:</strong> <a href="mailto:gauravkrv676@gmail.com">gauravkrv676@gmail.com</a><br>
+      <strong>GitHub:</strong> <a href="https://github.com/GauravKrv" target="_blank" rel="noopener">github.com/GauravKrv</a>
+    </p>
+
+    <div class="footer">
+      &copy; 2026 Oplog. All rights reserved.
+    </div>
+  </div>
+</body>
+</html>
